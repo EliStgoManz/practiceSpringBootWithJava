@@ -19,8 +19,8 @@ public class UserRestController {
     public Map<String,Object>details(){
         Map<String,Object> body=new HashMap<>();
 
-       body.put("title","hola Mundo Javita");
-       body.put("name","Eli");
+       body.put("title","hola Amigos, soy");
+       body.put("name","Eli Santiago");
        body.put("lastname", "Manzano");
        return body;
     }
