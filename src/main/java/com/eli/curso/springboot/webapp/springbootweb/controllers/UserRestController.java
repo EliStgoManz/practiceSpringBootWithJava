@@ -10,18 +10,23 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+import com.eli.curso.springboot.webapp.springbootweb.models.User;
+
 
 @RestController
 @RequestMapping("/api")
 public class UserRestController {
 
+    
+
     @GetMapping("/details")
     public Map<String,Object>details(){
+        
+        User user=new User("Eli", "Santiago");
         Map<String,Object> body=new HashMap<>();
-
+       
        body.put("title","hola Amigos, soy");
-       body.put("name","Eli Santiago");
-       body.put("lastname", "Manzano");
+       body.put("user",user);
        return body;
     }
 
